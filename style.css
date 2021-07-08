@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+.logo > img {
+    width: 50px;    
+  }
+
+@media screen and (max-width: 767px) {
+  body {
+    background: white;
+  }
+
+  header {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .hamburger {
+    width: 100%;
+    background-color: rgb(73, 77, 77);
+    color: white;    
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .product {
+    border-width: 1px;
+    border-style: solid;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+  }
+
+  .social {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .social_icon {
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+  }  
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background: white;
+  }
+
+  header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .navbar {
+    width: 100%;
+    background-color: rgb(73, 77, 77);
+    color: white; 
+  }
+
+  .hamburger {   
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .product {
+    margin-right: 10%;
+    margin-left: 10%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .social {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .social_icon {
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+  }  
+}
+
+@media screen and (min-width: 1025px) {
+  body {
+    background: white;
+  }
+
+  header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+
+  .logo {
+   margin-right: 17%;
+   margin-left: 17%;
+  }
+
+  .navbar {
+    width: 100%;
+    background-color: rgb(73, 77, 77);
+    color: white; 
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    margin-left: 65%;
+    margin-right: 2%;
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+
+  .product {
+    width: 28%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .social {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .social_icon {
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+  }  
+}
+
+
